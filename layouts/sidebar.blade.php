@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
@@ -30,7 +30,7 @@
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('transaksi.peminjaman') }}">
+            <a class="nav-link" href="">
                 <i class="fas fa-fw fa-check"></i>
                 <span>Transaksi Peminjaman</span>
             </a>
@@ -45,17 +45,16 @@
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ route('data.user') }}">Data User</a>
-                    <a class="collapse-item" href="{{ route('data.buku') }}">Data Buku</a>
-                    <a class="collapse-item" href="{{ route('data.kategori') }}">Data Kategori Buku</a>
-                    <a class="collapse-item" href="{{ route('data.ulasan') }}">Data Ulasan</a>
-                    <a class="collapse-item" href="{{ route('data.peminjaman') }}">Data Peminjaman</a>
-                    <a class="collapse-item" href="{{ route('data.koleksi') }}">Data Koleksi</a>
+                    <a class="collapse-item" href="">Data User</a>
+                    <a class="collapse-item" href="">Data Buku</a>
+                    <a class="collapse-item" href="">Data Kategori Buku</a>
+                    <a class="collapse-item" href="">Data Ulasan</a>
+                    <a class="collapse-item" href="">Data Peminjaman</a>
+                    <a class="collapse-item" href="">Data Koleksi</a>
                 </div>
             </div>
         </li>
 
-        @if (auth()->user()->level == 'admin' || auth()->user()->level == 'petugas')
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
@@ -64,20 +63,19 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ route('laporan.buku') }}">Laporan Buku</a>
-                    <a class="collapse-item" href="{{ route('laporan.kategori') }}">Laporan Kategori</a>
-                    <a class="collapse-item" href="{{ route('laporan.peminjaman') }}">Laporan Peminjaman</a>
-                    <a class="collapse-item" href="{{ route('laporan.user') }}">Laporan User</a>
+                    <a class="collapse-item" href="">Laporan Buku</a>
+                    <a class="collapse-item" href="">Laporan Kategori</a>
+                    <a class="collapse-item" href="">Laporan Peminjaman</a>
+                    <a class="collapse-item" href="">Laporan User</a>
                 </div>
             </div>
         </li>
-        @endif
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
             <span>Logout</span></a>
     </li>
