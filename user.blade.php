@@ -37,7 +37,6 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    @include('pesan')
                     @yield('content')
                 </div>
                 <!-- /.container-fluid -->
